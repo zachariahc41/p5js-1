@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>Zoog</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+
+    <script>
+        function setup() {
+            createCanvas(800, 600);
+            strokeWeight(4);
+
+            // face
+            fill(0,255,0);
+            ellipse(350,100,500,200); // head
+            fill(255);
+            ellipse(220,100,70,70); // left eye
+            ellipse(480,100,70,70); // right eye
+            strokeWeight(20);
+            point(350,140); // nose
+            
+            // body
+            fill(150); // gray
+            strokeWeight(4);
+            rect(200,200,300,200);
+            textAlign(CENTER);
+            textSize(40);
+            fill(0); // black
+            text("Hello",350,280);
+            text("Earthlings",350,350);
+            
+            // legs
+            line(250,400,100,500); // left
+            line(450,400,600,500); // right
+        }
+
+        function draw() {
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/bmuellerhstat/p5js/blob/master/zoog.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+</html>
